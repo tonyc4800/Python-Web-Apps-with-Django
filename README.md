@@ -7,8 +7,7 @@ can edit and delete posts as need as well as editing there profile information.
 The main objective was to excercise the use of Django in the creation of a webpage with multiple web apps. Another objective was to study the architecture of Django 
 and understand the relationships between models, views, urls and htmls within Django.
 
-### NOTE:
-- A virtual python environment was used as "fresh" installation of python when install Django and other necessary libraries. The virtual file is not included due to size
+A virtual python environment was used as "fresh" installation of python when install Django and other necessary libraries. The virtual file is not included due to size
 
 ![Home Page](Screenshots/Screenshot3.png)
 ![About Page](Screenshots/Screenshot2.png)
