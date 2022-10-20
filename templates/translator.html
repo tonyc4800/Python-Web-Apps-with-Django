@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Contains input and output text boxes -->
+<div class="container">
+    <form action="{% url 'translator_view' %}" method="post">
+        <!-- csrf_token needed to not draw error when submit button is pressed -->
+        {% csrf_token %}
+        <div class="row">
+            <!-- Input field -->
+            <div class="col-sm-6 mt-3 left">
+                <textarea class="form-control" name="my_textarea" rows="3">{{original_text}}</textarea>
+            </div>
+            <!-- Output field. Submit button also located in this div -->
+            <div class="col-sm-6 mt-3 left">
+                <textarea class="form-control" rows="3">{{output_text}}</textarea>
+                <input class="btn btn-primary ml-3 mt-3" type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock content %}
